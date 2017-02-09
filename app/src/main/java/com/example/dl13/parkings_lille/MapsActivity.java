@@ -37,13 +37,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Intent intent = getIntent();
         parkings = (ArrayList<HashMap<String, String>>)intent.getSerializableExtra("parkings");
 
-        if(!isNetworkAvailable())
+        /*if(!isNetworkAvailable())
         {
             Toast.makeText(getApplicationContext(),
                     "Connexion internet impossible. \n" + "Veuillez réessayer ultérieurement.",
                     Toast.LENGTH_LONG)
                     .show();
-        }
+        }*/
     }
 
 
